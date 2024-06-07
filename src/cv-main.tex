@@ -1,0 +1,317 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Leah Hartman} \\ \vspace{1pt}
+    \small \href{mailto:x@x.com}{\underline{leah.ghartman@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/leahghartman}{\underline{linkedin.com/in/leahghartman}} $|$ \href{https://leahghartman.github.io/}{\underline{leahghartman.github.io}}
+\end{center}
+
+
+%-----------EDUCATION AND TRAINING-----------
+\section{Education and Training}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan}{Ann Arbor, MI}
+      {Doctor of Philosophy in Applied Physics}{Fall 2024 -- Present}
+
+      \vspace{3mm}
+      
+    \resumeSubheading
+      {Western Kentucky University}{Bowling Green, KY}
+      {Bachelor of Science in Physics, Minor in Mathematics}{Fall 2020 -- Spring 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{GPA}: 4.0/4.0, \textbf{Summa Cum Laude}}
+        \resumeItem{\textit{Fall 2020} -- \textit{Fall 2022} was spent as a \textit{non-degree seeking} high school student as part of The Carol Martin Gatton Academy of Mathematics and Science.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Optically-Generated Plasma Lens for Focusing Relativ. Electron Beams}{Jun. 2023 -- Aug. 2024}
+      {University of Colorado, Boulder -- Supervised by Dr. Mike Litos}{Boulder, CO}
+      \resumeItemListStart
+        \resumeItem{Project focused on the development of an optical configuration to generate a plasma lens capable of focusing relativistic electron beams in plasma wakefield accelerators}
+        \resumeItem{Created Python code to perform image analysis, including filtering and processing images, to optimize data collection and analysis}
+        \resumeItem{Directly contributed to the development of the plasma lens by acquiring expertise in and manipulating diverse optical components, including cylindrical lenses, beam expanders, and visible-diode lasers}
+        \resumeItem{Assisted in setting up camera servers on a Linux-based operating system, allowing for possible future ease-of-use of cameras within the lab}
+    \resumeItemListEnd
+
+    \vspace{2mm}
+
+    \resumeSubheading
+      {Analyzing Rolling Oscillations Along a Cycloidal Ramp}{Mar. 2022 -- May 2024}
+      {Western Kentucky University -- Supervised by Dr. Doug Harper and Dr. Ivan Novikov}{Bowling Green, KY}
+      \resumeItemListStart
+        \resumeItem{Led the development of an experimental setup to study the translational and rotational motion of objects filled with various viscous liquids along a cycloidal ramp}
+        \resumeItem{Used CAD software to design and construct infrared photogates using IR phototransistors and LEDs. Housed these photogates within 3D-printed enclosures for data acquisition}
+        \resumeItem{Currently leading the project and mentoring two Gatton Academy students}
+        \resumeItem{Developed Python code for efficient data analysis and additionally finalizing LabVIEW code for the control and operation of the infrared photogates}
+    \resumeItemListEnd
+
+    \vspace{2mm}
+      
+    \resumeSubheading
+      {Demonstration of Stochastic Resonance in a Mechanical Duffing Oscillator}{Mar. 2022 -- May 2023}
+      {Western Kentucky University -- Supervised by Dr. Doug Harper and Dr. Ivan Novikov}{Bowling Green, KY}
+      \resumeItemListStart
+        \resumeItem{A project focused on creating a system exhibiting stochastic resonance and analyzing its response to different levels of external noise}
+        \resumeItem{Facilitated data acquisition for another student to demonstrate stochastic resonance, ensuring efficient and accurate data collection}
+        \resumeItem{Developed Python code for data analysis, using scientific libraries to calculate the Kramers' rate of the system}
+        \resumeItem{Collaborated on troubleshooting and upkeep of the experimental system and LabVIEW code, ensuring smooth operation and data collection}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TEACHING EXPERIENCE-----------
+\section{Teaching Experience}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Physics Tutor}}{Aug. 2022 -- Dec. 2023}
+
+          \vspace{0.5mm}
+          
+          \begin{enumerate}
+              \item The Carol Martin Gatton Academy of Mathematics and Science Physics Tutor (\textit{Aug. 2022 -- May 2023})
+                \resumeItemListStart
+                    \resumeItem{Courses tutored include: University Physics I, University Physics II}
+                    \resumeItem{Responsibilities include: leading University Physics I and II review sessions, aiding with any homework problems, coding problems, test corrections, general classroom content, and any questions students may have.}
+                \resumeItemListEnd
+
+              \vspace{2mm}
+
+              \item Western Kentucky University Physics Help Center (\textit{Aug. 2022 -- Dec. 2023})
+                \resumeItemListStart
+                    \resumeItem{Courses tutored include: University Physics I, University Physics II, Biophysics I, Biophysics II, Modern Physics I, Astronomy of the Solar System, Astronomy of Stellar Systems, Descriptive Astronomy}
+                \resumeItemListEnd
+          \end{enumerate}
+
+          \newpage
+          
+      \resumeProjectHeading
+          {\textbf{Learning Assistant}}{Aug. 2022 -- Dec. 2023}
+          \resumeItemListStart
+            \resumeItem{Assisted in teaching introductory physics labs for University Physics I and II}
+            \resumeItem{Responsibilities include: assisting the lab instructor, helping students complete experiments, and ensuring they understand the content each week}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Teaching Assistant}}{Jan. 2023 -- Dec. 2023}
+          \resumeItemListStart
+            \resumeItem{Taught introductory physics labs for University Physics I and II}
+            \resumeItem{Responsibilities include: grading weekly lab worksheets and lab reports for each experiment, basic instruction for each experiment, and assisting students in completing lab each week}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------CONFERENCE PRESENTATIONS AND POSTERS-----------
+\section{Conference Presentations and Posters}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Hartman, L.}, Guerrero, M., Doss C., Hansel C., Lee V., Litos M., (May 2024). Optically-generated plasma lens for \\
+          \qquad focusing relativistic electron beams. Poster presented at the International Particle Accelerator Conference, \\
+          \qquad Nashville, TN.}{}
+      \resumeProjectHeading
+          {\textbf{Hartman, L.}, Guerrero, M., Doss C., Hansel C., Lee V., Litos M., (October 2023). Optically-generated plasma lens for \\
+          \qquad focusing relativistic electron beams. Poster presented at the American Physical Society Division of \\
+          \qquad Plasma Physics conference, Denver, CO.}{}
+
+      \resumeProjectHeading
+          {Guerrero M., \textbf{Hartman, L.}, Doss C., Hansel C., Lee V., Litos M., (October 2023). Underdense passive plasma lens for \\
+          \qquad focusing relativistic electron beams. Poster presented at the American Physical Society Division of Plasma \\
+          \qquad Physics conference, Denver, CO.}{}
+
+      \resumeProjectHeading
+          {\textbf{Hartman, L.}, Harper D., Hebenstiel L., Novikov I., Sherrard S., (April 2023). An analysis of liquid-filled \\
+          \quad containers along a curved ramp using the ROL-FC experimental setup. Oral presentation given at the \\ 
+          \quad Western Kentucky University Student Scholar Showcase, Bowling Green, KY.}{}
+
+      \resumeProjectHeading
+          {Sherrard, S., \textbf{Hartman, L.}, Harper D., Hebenstiel L., Novikov I., (April 2023). Experimental determination of \\
+          \qquad coefficients of friction in rolling oscillation of liquid-filled container (ROL-FC) experimental setup \\
+          \qquad for generation of cycloid. Poster presentation given at the Western Kentucky University Student \\
+          \qquad Scholar Showcase, Bowling Green, KY.}{}\
+          
+      \resumeProjectHeading
+          {\textbf{Hartman, L.}, Harper D., Hebenstiel, L., Novikov I., (November 2022). Experimental setup to study rolling oscillations \\
+          \qquad along a curved ramp. Poster presentation given at the Kentucky Academy of Science annual meeting at \\
+          \qquad Morehead University, Morehead, KY.}{}
+          
+      \resumeProjectHeading
+          {Alvarez, I., \textbf{Hartman, L.}, Harper D., Hebenstiel, L., Novikov I., (November 2022). Experimental observation of \\
+          \qquad bifurcation in a damped driven oscillator. Poster presentation given at the Kentucky Academy of Science \\
+          \qquad annual meeting at Morehead University, Morehead, KY.}{}
+
+      \resumeProjectHeading
+          {\textbf{Hartman, L.}, Harper D., Hebenstiel, L., Novikov I., (November 2022). Experimental study of Kramers' rate in a \\
+          \qquad magnetically-driven duffing oscillator. Poster presentation given at the Southeastern Section of \\
+          \qquad the American Physical Society at the University of Mississippi, Oxford, MS.}{}
+        
+    \resumeSubHeadingListEnd
+
+
+%-----------AWARDS AND SCHOLARSHIPS-----------
+\section{Awards, Honors, and Scholarships}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{Scholar of the Ogden College of Science and Engineering}}{Spring 2024}
+
+      \vspace{1mm}
+      
+      \resumeProjectHeading{\textbf{George V. Page Award for Excellence in Scholarship in Physics and Astronomy}}{Spring 2024}
+
+      \vspace{1mm}
+      
+      \resumeProjectHeading{\textbf{Mitchell Scholars Award}}{Summer 2023}
+
+      \vspace{1mm}
+
+      \resumeProjectHeading{\textbf{Research Experiences for Undergraduates (REU) Selection}}{Spring 2023}
+
+      \vspace{1mm}
+
+      \resumeProjectHeading{\textbf{Henry M. and Zula G. Yarbrough Award in Mathematics}}{Spring 2023}
+
+      \vspace{1mm}
+
+      \resumeProjectHeading{\textbf{Hugh F. and Katherine A. Johnson Mathematics Award}}{Spring 2023}
+      
+      \vspace{1mm}
+      
+      \resumeProjectHeading{\textbf{Gatton Academy Cherry Presidential Scholarship}}{Spring 2022 - Spring 2024}
+
+      \vspace{1mm}
+          
+      \resumeProjectHeading{\textbf{Targeted Gatton and Craft Academy Graduate Scholarship}}{Spring 2022 - Spring 2024}
+
+      \vspace{1mm}
+      
+      \resumeProjectHeading{\textbf{Faculty-Undergraduate Student Engagement (FUSE) Grant Award}}{Spring 2022 - Spring 2023}
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS AND ORGANIZATIONS-----------
+\section{Certifications and Organizations}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{Sigma Pi Sigma -- Physics Honors Society}}{Spring 2024}
+
+      \vspace{1mm}
+      
+      \resumeProjectHeading{\textbf{Mathematica Student Certification}}{Spring 2021}
+    \resumeSubHeadingListEnd
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{T\&N Pools Chemical Technician}}{May 2021 -- September 2022}
+          \resumeItemListStart
+            \resumeItem{Tested chemical levels and advised customers on ways to chemically-balance their pools}
+            \resumeItem{Performed routine maintenance, services, and cleaning on customers' pools including balancing chemicals, vacuuming, and installing covers}
+            \resumeItem{Developed a new scheduling system for customer pool services using Python}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Developer Tools}{: Git (-Lab and -Hub), Slurm, GNU/Linux} \\
+     \textbf{Frameworks}{: OpenCV, PyTorch, NumPy, Pandas} \\
+     \textbf{Technical Languages and Codes}{: Python, C/C++, MATLAB, Mathematica, NI LabVIEW, Java, LaTeX, HiPACE++} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
